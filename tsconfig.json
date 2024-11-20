@@ -17,5 +17,13 @@
     "strictBindCallApply": false,
     "forceConsistentCasingInFileNames": false,
     "noFallthroughCasesInSwitch": false
-  }
+  },
+  "include": [
+    "src/**/*.ts",      // Incluye todos los archivos de TypeScript en src
+    "src/migrations/*.ts",   // Asegúrate de incluir específicamente la carpeta de migraciones
+    "ormconfig.ts"      // Incluye el archivo de configuración en la raíz
+  ],
+  "exclude": [
+    "node_modules"      // Asegúrate de excluir node_modules
+  ]
 }
