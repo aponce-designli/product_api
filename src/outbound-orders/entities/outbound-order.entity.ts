@@ -1,7 +1,7 @@
 import { Entity, PrimaryGeneratedColumn, Column, OneToMany } from 'typeorm';
 import { OrderLine } from '../../order-lines/entities/order-line.entity';
 
-@Entity('outbound_orders') // Mapea esta clase a la tabla 'outbound_orders'
+@Entity('outbound_orders') 
 export class OutboundOrder {
   @PrimaryGeneratedColumn()
   id: number;

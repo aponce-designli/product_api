@@ -3,7 +3,7 @@ import { Product } from '../../products/entities/product.entity';
 import { InboundOrder } from '../../inbound-orders/entities/inbound-order.entity';
 import { OutboundOrder } from '../../outbound-orders/entities/outbound-order.entity';
 
-@Entity('order_lines') // Mapea esta clase a la tabla 'order_lines'
+@Entity('order_lines')
 export class OrderLine {
   @PrimaryGeneratedColumn()
   id: number;

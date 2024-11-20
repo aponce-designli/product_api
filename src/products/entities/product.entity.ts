@@ -1,7 +1,7 @@
 import { Entity, PrimaryGeneratedColumn, Column, OneToMany } from 'typeorm';
 import { OrderLine } from '../../order-lines/entities/order-line.entity';
 
-@Entity('products') // Mapea esta clase a la tabla 'products'
+@Entity('products')
 export class Product {
   @PrimaryGeneratedColumn()
   id: number;
